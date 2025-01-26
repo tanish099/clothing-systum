@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.n1{
+    
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+  
+}
+
+navbar1{
+    padding: 10px;
+    background-color: rgb(26, 26, 27);
+    color: white;
+    width: 100vw;
+    font-size: 14px;
+    font-weight: bold;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.n2{
+    margin: 8px auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #464444;
+    
+}
+
+
+
+.n2 left{
+    display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     gap: 8rem;
+     padding-left: 10px;
+     align-items: center;
+     font-weight: BOLD;
+
+    }
+        
+.step-1{
+    /* max-width: 1200px; */
+    display: flex;
+    justify-content: center;
+   overflow: hidden;
+}
+figure{
+    display: flex;
+    position: relative;
+    left: 0;
+    width: 1200px;
+    animation: 30s slide ease-in ;
+}
+.step{
+
+width: 1306px;
+
+}
+
+
+.items{
+    height: 340px;
+    width: 220px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     border-radius: 0.3rem;
+     transition: all ease 0.90s;
+     border: 1px solid rgb(236, 231, 231);
+     
+    }
+.items:hover{
+    
+    
+    transform: scale(1.02);
+    border: 1px solid rgb(53, 139, 252);
+}
+
+#container-1{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ margin-top: 10px;
+ flex-wrap:wrap ;
+ /* width: 1200px; */
+}
+#head1{
+    margin-bottom: 10px;
+    color: #3f3f3f;
+ border-bottom: 1px solid rgb(107, 104, 104);
+}
+.img1{
+ height: 220px;
+ width: 160px;
+}
+.h3heading{
+    padding-bottom: 5px;
+    color:#999696;
+    font-size: 0.9rem;
+}
+.spantag{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.bottom{
+    width: 200px;
+    size: 50%;
+   padding: 10px;
+   padding-left: 15px;
+}
+.top{
+    size: 50%;
+    
+}
+
+.bottom h4{
+    color: #888585;
+    font-size:0.7rem;
+}
+
+#cards-1{
+display: grid;
+grid-template-columns:repeat(5,1fr);
+gap: 25px;
+}
+a{
+    text-decoration: none;
+    color: #3f3f3f
+}
+
+a:hover{
+    color: rgb(214, 139, 0);
+    border-bottom: 1px solid orange;
+}
+
+.active{
+    color: rgb(214, 139, 0);
+    border-bottom: 1px solid orange;
+}
+.button1{
+    font-size: large;
+    color: black;
+    padding: 4px 20px;
+font-weight: bold;
+outline: none;
+border: none;
+/* border: 1px solid black; */
+border-radius: 0.3rem;
+}
+
+.button1:hover{
+   
+    background-color: rgb(177, 0, 168);
+    color: white;
+}
+#mix{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+h5{
+    color: green;
+    padding: 4px;
+    font-size: large;
+}
+
+#container-2{
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    /* width: 1200px; */
+ 
+   }
+   #container-3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    /* width: 1200px; */
+   }
+
+
+   /* Responsive ke liye midea query */
+   @media  (min-height:410px) {
+    .n1{
+        width:1306px
+    }
+    navbar1{
+        width:1306px
+    }
+    .n2{
+        width:1306px
+    }
+    .step-1{
+        width:1306px
+    }
+}
