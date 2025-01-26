@@ -69,7 +69,7 @@ figure{
 }
 .step{
 
-width: 1306px;
+width: 100%;
 
 }
 
@@ -116,10 +116,10 @@ width: 1306px;
     color:#999696;
     font-size: 0.9rem;
 }
-.spantag{
+/* span{
     font-size: 1.3rem;
     font-weight: bold;
-}
+} */
 .bottom{
     width: 200px;
     size: 50%;
@@ -205,17 +205,106 @@ h5{
 
 
    /* Responsive ke liye midea query */
-   @media  (min-height:410px) {
-    .n1{
-        width:1306px
+   @media  (max-width:415px) {
+   
+   .n2{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+        
+   }
+.n2 left{
+    display: grid;
+   grid-template-columns: repeat(3,1fr);
+    column-gap: 80px;
+    row-gap: 20px;
+    flex-wrap: nowrap;
+}
+
+.active{
+    border: none;
+}
+
+span{
+ font-size: 0.7rem;
+}
+#container-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 10px;
+    flex-wrap:wrap ;
+    /* width: 1200px; */
+   }
+
+#cards-1{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:28px;
     }
-    navbar1{
-        width:1306px
-    }
-    .n2{
-        width:1306px
-    }
-    .step-1{
-        width:1306px
-    }
+
+    .items{
+        height: 250px;
+        width: 170px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         border-radius: 0.3rem;
+         transition: all ease 0.90s;
+         border: 1px solid rgb(236, 231, 231);
+         
+        }
+        #head1{
+            margin-bottom: 10px;
+            color: #3f3f3f;
+         border-bottom: 1px solid rgb(107, 104, 104);
+        }
+        .img1{
+         height: 150px;
+         width: 110px;
+        }
+        .h3heading{
+            padding-bottom: 5px;
+            color:#999696;
+            font-size: 0.6rem;
+        }
+        /* span{
+            font-size: 1.3rem;
+            font-weight: bold;
+        } */
+        .bottom{
+            width: 150px;
+            size: 50%;
+           padding: 10px;
+           padding-left: 15px;
+        }
+        .top{
+            size: 50%;
+            
+        }
+        
+        .bottom h4{
+            color: #888585;
+            font-size:0.5rem;
+        }
+        .button1{
+            font-size: 0.8rem;
+            color: black;
+            padding: 4px 20px;
+        font-weight: bold;
+        outline: none;
+        border: none;
+        /* border: 1px solid black; */
+        border-radius: 0.3rem;
+        }
+        body{
+            box-sizing: border-box;
+        }
+        h5{
+            font-size: 0.7rem;
+        }
+     
 }
