@@ -27,12 +27,12 @@ navbar1{
     font-size: 14px;
     font-weight: bold;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 .n2{
     margin: 8px auto;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     padding: 5px;
     align-items: center;
     justify-content: space-evenly;
@@ -203,6 +203,152 @@ h5{
     /* width: 1200px; */
    }
 
+   .testimonial-container{
+ 
+    background-color: var(--background-color--);
+    padding: 1.6rem;
+    margin: 0 auto;
+    max-width: 800px;
+    
+    
+}
+.testimonial-content{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 1rem;
+
+
+}
+.testmonial-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.testimonial-grid{
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fill,minmax(230px,1fr));
+    gap: 1rem;
+  
+    
+}
+.testimonial-card{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    gap: 0.6rem;
+    border: 1px solid rgb(197, 191, 191);
+    border-radius: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0, 0.1);
+  padding: 0.6rem ;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba (0.0.0.0.2);
+    border: 1px solid rgb(25, 0, 255);
+}
+.testimonial-icon{
+    height: 3.5rem;
+    width: 3.4rem;
+    border-radius: 50%;
+}
+
+.testimonial-text{
+    font-size: 0.9rem;
+    color: #0f0f0f;
+}
+.testimonial-title{
+    font-size: 0.8rem;
+    font-weight: bold;
+    color:rgb(44, 58, 245);
+}
+
+.testimonial-desc{
+    font-size: 0.6rem;
+    color: #777;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    border-color: var(--background-color--);
+    margin: 0 auto;
+    padding: 0 4rem;
+    max-width: 1080px;
+
+}
+.footer{
+max-width: 1080px;
+padding: 2rem;
+display: flex;
+justify-content: space-between;
+text-align: left;
+}
+
+.footer-top{
+    display: flex;
+    flex-direction: column;
+    gap:1.2rem;
+}
+
+.comp-logo{
+font-size: 1rem;
+font-weight: bold;
+}
+.logo-link{
+    color: black;
+}
+
+.logo-svg{
+    
+    height: 1.1rem;
+    width: 1.1rem;
+}
+.filler-text{
+    font-size: 0.8rem;
+    color:#777;
+}
+
+.footer-grid{
+    display: flex;
+    justify-content: center;
+    gap: 4.7rem;
+}
+.footer-grid-column{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.footer-grid-heading{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.footer-link-list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style: none;
+}
+.footer-link{
+    font-size: 0.7rem;
+    color: var(--gray);
+}
+.footer-copyright{
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #777;
+    font-size: 0.7rem;
+    color: #777;
+    padding:1rem;
+}
+
 
    /* Responsive ke liye midea query */
    @media  (max-width:415px) {
@@ -307,4 +453,34 @@ span{
             font-size: 0.7rem;
         }
      
+  
+
+
 }
+@media screen and (max-width:1000px) {
+    
+        .footer{
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+        }
+.testimonial-grid{
+    display: flex;
+   flex-direction: column;
+}
+.testimonial-card{
+    width: 250px;
+
+}
+    .footer-grid{
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+      flex-direction: row;
+        margin: 0 auto;
+        gap: 40px;
+    }
+
+
+}
+
