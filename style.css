@@ -271,6 +271,8 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .testimonial-desc{
+    display: flex;
+    justify-content: center;
     font-size: 0.6rem;
     color: #777;
 }
